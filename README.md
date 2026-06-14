@@ -36,6 +36,7 @@ I needed a macro software that could perform beyond what TinyTasks and other fre
   -> More on the way as I am still thinking on how to expand this further
 
 # Screenshots
-<img width="1508" height="902" alt="image" src="https://github.com/user-attachments/assets/ddcf1dfb-4788-4e00-8e95-06abe33e30c6" />
+<img width="1243" height="798" alt="image" src="https://github.com/user-attachments/assets/2a4c68b0-60a2-4948-a013-f15edb8f6dfb" />
+
 
 
