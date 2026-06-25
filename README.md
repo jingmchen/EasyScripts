@@ -2,7 +2,7 @@
 C# Avalonia (.NET10 / Avalonia 12)
   - Targets Windows, MacOS, and Linux
 
-I plan to make this a commercial software, as I need side income as my current job is low paying.
+I plan to make this a commercial software, as I need side income as my current job salary is insufficient for housing.
 To create a commercial macro in a market full of free macro software, this software idea needs to deliver something unique, appealing, and useful.
 
 # Purpose
@@ -10,7 +10,10 @@ To create a commercial macro in a market full of free macro software, this softw
 
 - Macro steps are sequential
 - Macro can be executed "concurrently" (low-level hooks do not support true concurrent actions, so in code, it simply executes from Lane 1 -> Lane 2 -> etc. if both macro steps in both lanes are to be executed in the same timespan)
-- Supports asynchronous monitoring. For example: Lane 1 detects a pixel change, switches to Lane 3
+
+TODO:
+- Create asynchronous monitoring. For example: Lane 1 detects a pixel change, switches to Lane 3. Conditional block with IF -> GOTO, and ELSE -> GOTO
+- Create pixel detection (pixel by point, pixel by bitmap)
 
 # PROJECT ARCHITECTURE
   - ProjectRoot/
@@ -91,28 +94,6 @@ To create a commercial macro in a market full of free macro software, this softw
       - Directory.Packages.props
       - EasyScripts.slnx
       - LICENSE.md
-  
-
-# Purpose
-
-I needed a macro software that could perform beyond what TinyTasks and other free macro software could offer:
-  - OCR or image capture
-  - Conditional logic; If window shows X instead of Y, proceed to branch 1, otherwise proceed to branch 2
-  - Async running of multiple macro sequences in parallel
-  - Scheduling
-
-
-# Current status
-
-- AppHost
-  -> Completed
-- UI
-  -> Wiring up EditorWindow and all the required DataTemplates for the View
-  -> Aiming to make a modern UI similar to RPA automation tools
-- Core
-  -> Wiring up in conjunction with UI
-  -> Currently included: Mouse steps, Key steps, Power shell steps, Pixel Color check steps, Image (bitmap) check steps, Conditional steps
-  -> More on the way as I am still thinking on how to expand this further
 
 # Screenshots
 <img width="1243" height="798" alt="image" src="https://github.com/user-attachments/assets/2a4c68b0-60a2-4948-a013-f15edb8f6dfb" />
