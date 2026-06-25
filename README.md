@@ -1,7 +1,16 @@
 # EasyScripts - Sequential Macro Editor
-
 C# Avalonia (.NET10 / Avalonia 12)
   - Targets Windows, MacOS, and Linux
+
+I plan to make this a commercial software, as I need side income as my current job is low paying.
+To create a commercial macro in a market full of free macro software, this software idea needs to deliver something unique, appealing, and useful.
+
+# Purpose
+<img width="1243" height="798" alt="image" src="https://github.com/user-attachments/assets/2a4c68b0-60a2-4948-a013-f15edb8f6dfb" />
+
+- Macro steps are sequential
+- Macro can be executed "concurrently" (low-level hooks do not support true concurrent actions, so in code, it simply executes from Lane 1 -> Lane 2 -> etc. if both macro steps in both lanes are to be executed in the same timespan)
+- Supports asynchronous monitoring. For example: Lane 1 detects a pixel change, switches to Lane 3
 
 # PROJECT ARCHITECTURE
   - ProjectRoot/
