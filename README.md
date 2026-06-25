@@ -1,4 +1,4 @@
-# EasyScripts - Sequential Macro Editor
+# MacroCanvas - Sequential Macro Editor
 C# Avalonia (.NET10 / Avalonia 12)
   - Targets Windows, MacOS, and Linux
 
